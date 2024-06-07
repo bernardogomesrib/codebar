@@ -8,7 +8,7 @@ export async function fetchProduct(ean:string) {
     const headers = {
         'Accept': '*/*',
         'User-Agent': 'Cosmos-API-Request',
-        'X-Cosmos-Token': '4EIba0HVH7TgrYTEahetvA'
+        'X-Cosmos-Token': `${process.env.COSMOS_TOKEN}`
   };
   
   const requestOptions = {
